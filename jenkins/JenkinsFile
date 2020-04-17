@@ -1,5 +1,6 @@
-node('jenkins-slave') {
-    
+pipeline {
+ agent any
+ {    
      stage('test pipeline') {
         sh(script: """
             echo "hello"
@@ -9,4 +10,5 @@ node('jenkins-slave') {
            docker build . -t test
         """)
     }
+}
 }
