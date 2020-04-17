@@ -1,5 +1,7 @@
 
-node {
+node('jenkins-slave') {
+
+    
 
      stage('test pipeline') {
 
